@@ -11,6 +11,15 @@ We construct this repo into multiple branches for difference projects including:
 
 ## Tasks
 
+### 2026
+- continue...
+  
+- NDA: *Node Deduplication–Aware Knowledge Graph Construction for Simple Retrieval‑Augmented Generation in Historical Domains*.
+  
+  [Anh D. Nguyen](https://scholar.google.com/citations?hl=en&user=HZq1BoYAAAAJ), Tam T. Ngo, [O. D. A. Prima](https://scholar.google.com/citations?user=oKZ_SZcAAAAJ)
+
+  [code+data](https://github.com/VADNgrup/HKGC/tree/2026-ndakg)
+
 
 
 
