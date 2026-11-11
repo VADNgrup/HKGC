@@ -27,6 +27,11 @@ class Place(BaseEntity):
     location_type: Optional[str] = None
 
 
+class Organization(BaseEntity):
+    entity_type: str = "organization"
+    organization_type: Optional[str] = None
+
+
 class TimeEntity(BaseEntity):
     entity_type: str = "time"
     temporal_value: Optional[str] = None
@@ -183,6 +188,7 @@ class MultiLingualHistoryNormalizer(EntityNormalizer):
         text = re.sub(r'[Đ]', 'D', text)
         return text
 
+
     def normalize_name(self, name: str) -> str:
         if not name:
             return name
@@ -206,6 +212,37 @@ class MultiLingualHistoryNormalizer(EntityNormalizer):
             # For CJK or other non-latin, uppercase and NFC normalize
             norm = unicodedata.normalize("NFC", name)
             return norm.upper()
+
+
+def normalize_entity_type(name: str, entity_type: str) -> str:
+    """Apply high-precision Vietnamese name-prefix cues to broad entity types."""
+    normalized_name = unicodedata.normalize("NFC", name).strip().upper()
+    event_prefixes = (
+        "HỘI NGHỊ ",
+        "PHONG TRÀO ",
+        "CHIẾN DỊCH ",
+        "KHỞI NGHĨA ",
+        "CUỘC ĐẢO CHÍNH ",
+    )
+    organization_prefixes = (
+        "BAN BÍ THƯ ",
+        "BAN CHẤP HÀNH ",
+        "BAN THƯỜNG VỤ ",
+        "CHÍNH PHỦ ",
+        "ĐẢNG ",
+        "MẶT TRẬN ",
+        "NHA ",
+        "TỔ CHỨC ",
+        "TỈNH ỦY ",
+        "ỦY BAN ",
+        "UỶ BAN ",
+    )
+
+    if normalized_name.startswith(event_prefixes):
+        return "EVENT"
+    if normalized_name.startswith(organization_prefixes):
+        return "ORGANIZATION"
+    return entity_type
 
 
 # Default instance
@@ -442,6 +479,7 @@ def clean_entity_info(
     
     # 3. Clean outer quotes, brackets, and spaces
     type_clean = clean_quotes_and_brackets(type_clean)
+    type_clean = normalize_entity_type(name_clean, type_clean)
     desc_clean = clean_quotes_and_brackets(desc_clean)
     time_clean = clean_quotes_and_brackets(time_clean)
     geo_clean = clean_quotes_and_brackets(geo_clean)

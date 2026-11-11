@@ -6,7 +6,16 @@ PROMPTS["DEFAULT_TUPLE_DELIMITER"] = "<|>"
 PROMPTS["DEFAULT_RECORD_DELIMITER"] = "##"
 PROMPTS["DEFAULT_COMPLETION_DELIMITER"] = "<|COMPLETE|>"
 PROMPTS["process_tickers"] = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
-PROMPTS["DEFAULT_ENTITY_TYPES"] = ["person", "place", "time", "event", "artifact", "object", "concept"]
+PROMPTS["DEFAULT_ENTITY_TYPES"] = [
+    "person",
+    "organization",
+    "place",
+    "time",
+    "event",
+    "artifact",
+    "object",
+    "concept",
+]
 
 
 PROMPTS["entity_extraction"] = """-Goal-
@@ -15,7 +24,7 @@ Given a text document potentially relevant to historical and domain-specific con
 -Steps-
 1. Identify all entities. For each identified entity, extract the following:
 - entity_name: Clean, canonical name in uppercase. Strip all HTML tags, brackets, and outer quotes. PRESERVE VIETNAMESE ACCENTS/DIACRITICS (e.g. 'TRẦN HƯNG ĐẠO', 'ĐẠI VIỆT', 'THÁI BÌNH').
-- entity_type: One of the following: [{entity_types}] (Focus on historical individuals (person), historical sites/locations/states (place), specific dates/eras/dynasties (time), historical occurrences/wars/treaties (event), historical relics/books/wills (artifact), historical objects/weapons (object), and historical concepts/systems/policies (concept)).
+- entity_type: One of the following: [{entity_types}] (Use organization for political parties, governments, empires acting as political actors, armies, and institutions; place for geographical regions, countries as locations, cities, and sites; event for campaigns, uprisings, battles, and other historical occurrences; concept for ideologies, policies, and systems.).
 - alternate_names: Semicolon-separated list of alternate names, aliases, reign names, courtesy names, titles, or birth names (e.g. 'TRẦN QUỐC TUẤN; HƯNG ĐẠO ĐẠI VƯƠNG'). If none exist, output 'none'.
 - entity_description: Comprehensive summary of attributes, roles, and activities.
 - time_range: Start and end years or period (e.g. '1225-1258', '1370', 'Thế kỷ 13', or 'unknown').
@@ -50,7 +59,7 @@ Format the content keywords as: ("content_keywords"{tuple_delimiter}<high_level_
 -Examples-
 ######################
 Example 1:
-Entity_types: [person, place, time, event, artifact, object, concept]
+Entity_types: [person, organization, place, time, event, artifact, object, concept]
 Text:
 In 1066, the Norman-French army led by William, Duke of Normandy, invaded England. King Harold Godwinson led the Anglo-Saxon forces against them at the Battle of Hastings near Senlac Hill, resulting in a decisive Norman victory.
 ###############

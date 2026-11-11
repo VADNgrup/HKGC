@@ -243,6 +243,7 @@ class MiniRAG:
     enable_fuzzy_logic: bool = False
     fl_mode: str = field(default="simple")
     use_minirag_prompt: bool = False
+    fl_min_shared_neighbors: int = 1
 
     def __post_init__(self):
         log_file = os.path.join(self.working_dir, "minirag.log")

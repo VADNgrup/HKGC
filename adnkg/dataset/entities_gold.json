@@ -1,0 +1,5025 @@
+{
+  "schema_version": 1,
+  "source_file": "entities.csv",
+  "article_count": 2,
+  "article_ids": [
+    "binh_dan_hoc_vu",
+    "cao_trao_khang_nhat_cuu_nuoc"
+  ],
+  "paragraph_count": 29,
+  "gold_tuple_count": 142,
+  "incomplete_annotation_entry_count": 1,
+  "entity_count": 187,
+  "manual_merges": [
+    {
+      "alias": "chủ tịch hồ chí minh",
+      "canonical": "hồ chí minh",
+      "rationale": "Honorific title and personal name identify the same person."
+    },
+    {
+      "alias": "chủ tịch nước",
+      "canonical": "tôn đức thắng",
+      "rationale": "In the 1976 source paragraph, the title appears directly before Tôn Đức Thắng's name and refers to him."
+    },
+    {
+      "alias": "phong trào bình dân học vụ",
+      "canonical": "bình dân học vụ",
+      "rationale": "The movement label and its short form refer to the same movement."
+    },
+    {
+      "alias": "chiến dịch chống nạn mù chữ",
+      "canonical": "chiến dịch xóa nạn mù chữ",
+      "rationale": "Both labels refer to the 1945 anti-illiteracy campaign in these paragraphs."
+    },
+    {
+      "alias": "bắc cạn",
+      "canonical": "bắc kạn",
+      "rationale": "Historical spelling variant of the same province name."
+    },
+    {
+      "alias": "đế quốc nhật bản",
+      "canonical": "nhật bản",
+      "rationale": "The empire/state label and short country name identify the same actor here."
+    },
+    {
+      "alias": "phát xít nhật",
+      "canonical": "nhật bản",
+      "rationale": "In the Cao trào kháng Nhật article, this names the same Japanese wartime actor as Đế quốc Nhật Bản."
+    },
+    {
+      "alias": "phe việt minh",
+      "canonical": "việt minh",
+      "rationale": "The faction label refers to the Viet Minh movement."
+    },
+    {
+      "alias": "cao trào kháng nhật",
+      "canonical": "cao trào kháng nhật cứu nước-khởi nghĩa từng phần",
+      "rationale": "Short and extended names of the same historical movement."
+    },
+    {
+      "alias": "khoá huấn luyện giáo viên bình dân học vụ đầu tiên",
+      "canonical": "khóa huấn luyện giáo viên bình dân học vụ đầu tiên",
+      "rationale": "Orthographic variation in the same training-course name."
+    },
+    {
+      "alias": "kho thóc, gạo của nhật",
+      "canonical": "kho thóc gạo của nhật",
+      "rationale": "Punctuation-only variation for the same generic object mention."
+    },
+    {
+      "alias": "thực dân pháp ở đông dương",
+      "canonical": "thực dân pháp tại đông dương",
+      "rationale": "The source paragraphs use two locative phrasings for the same colonial actor."
+    },
+    {
+      "alias": "các lớp bình dân học vụ",
+      "canonical": "các lớp học bình dân học vụ",
+      "rationale": "The source paragraphs use shortened and expanded labels for the literacy classes."
+    }
+  ],
+  "entities": [
+    {
+      "id": "ENT-0001",
+      "name": "1.000 tấn thóc cho người dân",
+      "alias": [],
+      "mention_count": 5,
+      "source_rows": [
+        26
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0001",
+          "surface": "1.000 tấn thóc cho người dân",
+          "source_row": 26,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%21Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0002",
+          "surface": "1.000 tấn thóc cho người dân",
+          "source_row": 26,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%21Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0003",
+          "surface": "1.000 tấn thóc cho người dân",
+          "source_row": 26,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%21Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0004",
+          "surface": "1.000 tấn thóc cho người dân",
+          "source_row": 26,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%21Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0005",
+          "surface": "1.000 tấn thóc cho người dân",
+          "source_row": 26,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%21Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0002",
+      "name": "10 triệu người thoát mù chữ",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        9
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0006",
+          "surface": "10 triệu người thoát mù chữ",
+          "source_row": 9,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A11",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0003",
+      "name": "12 kho thóc",
+      "alias": [],
+      "mention_count": 2,
+      "source_rows": [
+        26
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0007",
+          "surface": "12 kho thóc",
+          "source_row": 26,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%21Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0008",
+          "surface": "12 kho thóc",
+          "source_row": 26,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%21Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0004",
+      "name": "14 kho thóc",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        25
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0009",
+          "surface": "14 kho thóc",
+          "source_row": 25,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%20Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0005",
+      "name": "2 xã Trung Màu và Dương Hút",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        21
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0010",
+          "surface": "2 xã Trung Màu và Dương Hút",
+          "source_row": 21,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%16Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0006",
+      "name": "2.520.678 người",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        8
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0011",
+          "surface": "2.520.678 người",
+          "source_row": 8,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A10",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0007",
+      "name": "21 tỉnh và thành phố ở miền Nam",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        10
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0012",
+          "surface": "21 tỉnh và thành phố ở miền Nam",
+          "source_row": 10,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A12",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0008",
+      "name": "26 kho thóc",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        27
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0013",
+          "surface": "26 kho thóc",
+          "source_row": 27,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%22Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0009",
+      "name": "39 kho thóc",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        27
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0014",
+          "surface": "39 kho thóc",
+          "source_row": 27,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%22Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0010",
+      "name": "6 triệu người",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        9
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0015",
+          "surface": "6 triệu người",
+          "source_row": 9,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A11",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0011",
+      "name": "75.000 lớp học với trên 95.000 giáo viên",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        9
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0016",
+          "surface": "75.000 lớp học với trên 95.000 giáo viên",
+          "source_row": 9,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A11",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0012",
+      "name": "95% dân số",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        4
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0017",
+          "surface": "95% dân số",
+          "source_row": 4,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A6",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0013",
+      "name": "Ban Bí thư Trung ương Đảng",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        10
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0018",
+          "surface": "Ban Bí thư Trung ương Đảng",
+          "source_row": 10,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A12",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0014",
+      "name": "Bình dân học vụ",
+      "alias": [
+        "Phong trào Bình dân học vụ",
+        "Phong trào bình dân học vụ"
+      ],
+      "mention_count": 8,
+      "source_rows": [
+        3,
+        7,
+        8,
+        9,
+        10
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0019",
+          "surface": "Bình dân học vụ",
+          "source_row": 3,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A5",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0020",
+          "surface": "Bình dân học vụ",
+          "source_row": 3,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A5",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0021",
+          "surface": "Bình dân học vụ",
+          "source_row": 3,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A5",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0022",
+          "surface": "Phong trào Bình dân học vụ",
+          "source_row": 7,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A9",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0023",
+          "surface": "Phong trào Bình dân học vụ",
+          "source_row": 8,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A10",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0024",
+          "surface": "Phong trào Bình dân học vụ",
+          "source_row": 9,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A11",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0025",
+          "surface": "Phong trào Bình dân học vụ",
+          "source_row": 9,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A11",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0026",
+          "surface": "Phong trào bình dân học vụ",
+          "source_row": 10,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A12",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0015",
+      "name": "Bắc Giang",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        17
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0027",
+          "surface": "Bắc Giang",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0016",
+      "name": "Bắc Kạn",
+      "alias": [
+        "Bắc Cạn"
+      ],
+      "mention_count": 2,
+      "source_rows": [
+        17,
+        19
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0028",
+          "surface": "Bắc Kạn",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0029",
+          "surface": "Bắc Cạn",
+          "source_row": 19,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%14Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0017",
+      "name": "Bắc Kỳ",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        24
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0030",
+          "surface": "Bắc Kỳ",
+          "source_row": 24,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%19Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0018",
+      "name": "Bắc Trung Kỳ",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        24
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0031",
+          "surface": "Bắc Trung Kỳ",
+          "source_row": 24,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%19Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0019",
+      "name": "bộ máy cai trị của Pháp",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        14
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0032",
+          "surface": "bộ máy cai trị của Pháp",
+          "source_row": 14,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%9Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0020",
+      "name": "Bộ Quốc gia Giáo dục",
+      "alias": [],
+      "mention_count": 3,
+      "source_rows": [
+        8
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0033",
+          "surface": "Bộ Quốc gia giáo dục",
+          "source_row": 8,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A10",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0034",
+          "surface": "Bộ Quốc gia Giáo dục",
+          "source_row": 8,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A10",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0035",
+          "surface": "Bộ Quốc gia Giáo dục",
+          "source_row": 8,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A10",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0021",
+      "name": "Cao Bằng",
+      "alias": [],
+      "mention_count": 2,
+      "source_rows": [
+        17,
+        19
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0036",
+          "surface": "Cao Bằng",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0037",
+          "surface": "Cao Bằng",
+          "source_row": 19,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%14Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0022",
+      "name": "Cao trào kháng Nhật cứu nước-Khởi nghĩa từng phần",
+      "alias": [
+        "Cao trào kháng Nhật",
+        "cao trào kháng Nhật"
+      ],
+      "mention_count": 3,
+      "source_rows": [
+        11,
+        16
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0038",
+          "surface": "Cao trào kháng Nhật cứu nước-Khởi nghĩa từng phần",
+          "source_row": 11,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%6Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0039",
+          "surface": "cao trào kháng Nhật",
+          "source_row": 16,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%11Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0040",
+          "surface": "Cao trào kháng Nhật",
+          "source_row": 16,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%11Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0023",
+      "name": "Charles de Gaulle",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        12
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0041",
+          "surface": "Charles de Gaulle",
+          "source_row": 12,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%7Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0024",
+      "name": "Chi bộ Đảng xã Trung Màu",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        21
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0042",
+          "surface": "Chi bộ Đảng xã Trung Màu",
+          "source_row": 21,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%16Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0025",
+      "name": "Chiến dịch xóa nạn mù chữ",
+      "alias": [
+        "Chiến dịch Chống nạn mù chữ"
+      ],
+      "mention_count": 3,
+      "source_rows": [
+        5,
+        6,
+        9
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0043",
+          "surface": "Chiến dịch Chống nạn mù chữ",
+          "source_row": 5,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A7",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0044",
+          "surface": "chiến dịch xóa nạn mù chữ",
+          "source_row": 6,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A8",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0045",
+          "surface": "Chiến dịch xóa nạn mù chữ",
+          "source_row": 9,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A11",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0026",
+      "name": "chiến khu Hiền Lương",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        18
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0046",
+          "surface": "chiến khu Hiền Lương",
+          "source_row": 18,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%13Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0027",
+      "name": "chiến khu Trần Hưng Đạo",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        18
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0047",
+          "surface": "chiến khu Trần Hưng Đạo",
+          "source_row": 18,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%13Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0028",
+      "name": "chiến khu Vần",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        18
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0048",
+          "surface": "chiến khu Vần",
+          "source_row": 18,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%13Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0029",
+      "name": "Chính phủ",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        5
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0049",
+          "surface": "Chính phủ",
+          "source_row": 5,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A7",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0030",
+      "name": "chính phủ bù nhìn Vichy",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        12
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0050",
+          "surface": "chính phủ bù nhìn Vichy",
+          "source_row": 12,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%7Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0031",
+      "name": "Chính phủ chống phát xít Đức",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        12
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0051",
+          "surface": "Chính phủ chống phát xít Đức",
+          "source_row": 12,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%7Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0032",
+      "name": "chính phủ Đế quốc Việt Nam",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        14
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0052",
+          "surface": "chính phủ Đế quốc Việt Nam",
+          "source_row": 14,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%9Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0033",
+      "name": "Chỉ thị 221 CT/TW",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        10
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0053",
+          "surface": "Chỉ thị 221 CT/TW",
+          "source_row": 10,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A12",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0034",
+      "name": "chợ Canh",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        30
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0054",
+          "surface": "chợ Canh",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0035",
+      "name": "Chợ Láng",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        30
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0055",
+          "surface": "Chợ Láng",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0036",
+      "name": "các chiến khu Việt Minh",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        14
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0056",
+          "surface": "các chiến khu Việt Minh",
+          "source_row": 14,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%9Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0037",
+      "name": "các cơ sở kinh tế của chế độ cũ",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        15
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0057",
+          "surface": "các cơ sở kinh tế của chế độ cũ",
+          "source_row": 15,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%10Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0038",
+      "name": "Các lớp học Bình dân học vụ",
+      "alias": [
+        "các lớp bình dân học vụ"
+      ],
+      "mention_count": 2,
+      "source_rows": [
+        6,
+        8
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0058",
+          "surface": "các lớp bình dân học vụ",
+          "source_row": 6,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A8",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0059",
+          "surface": "các lớp học Bình dân học vụ",
+          "source_row": 8,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A10",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0039",
+      "name": "các nhà tù",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        22
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0060",
+          "surface": "các nhà tù",
+          "source_row": 22,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%17Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0040",
+      "name": "các tầng lớp nhân dân",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        16
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0061",
+          "surface": "các tầng lớp nhân dân",
+          "source_row": 16,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%11Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0041",
+      "name": "các tỉnh Bắc Bộ",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        8
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0062",
+          "surface": "các tỉnh Bắc Bộ",
+          "source_row": 8,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A10",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0042",
+      "name": "các tỉnh miền Nam",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        31
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0063",
+          "surface": "các tỉnh miền Nam",
+          "source_row": 31,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%26Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0043",
+      "name": "Các tổ chức chính trị thân Nhật",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        14
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0064",
+          "surface": "Các tổ chức chính trị thân Nhật",
+          "source_row": 14,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%9Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0044",
+      "name": "các vùng Việt Minh",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        18
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0065",
+          "surface": "các vùng Việt Minh",
+          "source_row": 18,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%13Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0045",
+      "name": "các xí nghiệp",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        18
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0066",
+          "surface": "các xí nghiệp",
+          "source_row": 18,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%13Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0046",
+      "name": "Các đội Nhi đồng cứu quốc",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        7
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0067",
+          "surface": "Các đội Nhi đồng cứu quốc",
+          "source_row": 7,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A9",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0047",
+      "name": "Công nhân bến cảng Hải Phòng",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        29
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0068",
+          "surface": "Công nhân bến cảng Hải Phòng",
+          "source_row": 29,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%24Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0048",
+      "name": "công nhân Hà Nội",
+      "alias": [],
+      "mention_count": 2,
+      "source_rows": [
+        30
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0069",
+          "surface": "công nhân Hà Nội",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0070",
+          "surface": "công nhân Hà Nội",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0049",
+      "name": "công nhân khởi nghĩa Quảng Yên",
+      "alias": [],
+      "mention_count": 3,
+      "source_rows": [
+        30
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0071",
+          "surface": "công nhân khởi nghĩa Quảng Yên",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0072",
+          "surface": "công nhân khởi nghĩa Quảng Yên",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0073",
+          "surface": "công nhân khởi nghĩa Quảng Yên",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0050",
+      "name": "Công nhân mỏ Đông Triều",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        29
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0074",
+          "surface": "Công nhân mỏ Đông Triều",
+          "source_row": 29,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%24Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0051",
+      "name": "Công tác tuyên truyền",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        21
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0075",
+          "surface": "Công tác tuyên truyền",
+          "source_row": 21,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%16Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0052",
+      "name": "căn cứ địa",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        17
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0076",
+          "surface": "căn cứ địa",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0053",
+      "name": "căn cứ địa chính của toàn quốc",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        17
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0077",
+          "surface": "căn cứ địa chính của toàn quốc",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0054",
+      "name": "cổng mù",
+      "alias": [],
+      "mention_count": 2,
+      "source_rows": [
+        8
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0078",
+          "surface": "cổng mù",
+          "source_row": 8,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A10",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0079",
+          "surface": "cổng mù",
+          "source_row": 8,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A10",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0055",
+      "name": "Cộng hòa",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        3
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0080",
+          "surface": "Cộng hòa",
+          "source_row": 3,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A5",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0056",
+      "name": "cứu đói",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        28
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0081",
+          "surface": "cứu đói",
+          "source_row": 28,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%23Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0057",
+      "name": "Gia Viễn",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        26
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0082",
+          "surface": "Gia Viễn",
+          "source_row": 26,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%21Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0058",
+      "name": "giáo viên trong chiến dịch xóa mù chữ",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        6
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0083",
+          "surface": "giáo viên trong chiến dịch xóa mù chữ",
+          "source_row": 6,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A8",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0059",
+      "name": "giáo viên và học sinh cả nước",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        10
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0084",
+          "surface": "giáo viên và học sinh cả nước",
+          "source_row": 10,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A12",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0060",
+      "name": "giải quyết nạn đói",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        24
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0085",
+          "surface": "giải quyết nạn đói",
+          "source_row": 24,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%19Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0061",
+      "name": "gần 2 triệu người",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        15
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0086",
+          "surface": "gần 2 triệu người",
+          "source_row": 15,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%10Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0062",
+      "name": "huyện Hiệp Hòa",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        20
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0087",
+          "surface": "huyện Hiệp Hòa",
+          "source_row": 20,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%15Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0063",
+      "name": "Hà Giang",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        17
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0088",
+          "surface": "Hà Giang",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0064",
+      "name": "Hà Nội",
+      "alias": [],
+      "mention_count": 3,
+      "source_rows": [
+        5,
+        6
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0089",
+          "surface": "Hà Nội",
+          "source_row": 5,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A7",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0090",
+          "surface": "Hà Nội",
+          "source_row": 6,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A8",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0091",
+          "surface": "Hà Nội",
+          "source_row": 6,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A8",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0065",
+      "name": "hơn 22.100 lớp học",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        8
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0092",
+          "surface": "hơn 22.100 lớp học",
+          "source_row": 8,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A10",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0066",
+      "name": "Hơn 500.000 học viên",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        8
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0093",
+          "surface": "Hơn 500.000 học viên",
+          "source_row": 8,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A10",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0067",
+      "name": "hệ thống giáo dục thiếu thốn",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        4
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0094",
+          "surface": "hệ thống giáo dục thiếu thốn",
+          "source_row": 4,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A6",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0068",
+      "name": "học sinh và thanh niên Hà Nội",
+      "alias": [],
+      "mention_count": 4,
+      "source_rows": [
+        30
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0095",
+          "surface": "học sinh và thanh niên Hà Nội",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0096",
+          "surface": "học sinh và thanh niên Hà Nội",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0097",
+          "surface": "học sinh và thanh niên Hà Nội",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0098",
+          "surface": "học sinh và thanh niên Hà Nội",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0069",
+      "name": "Hồ Chí Minh",
+      "alias": [
+        "Chủ tịch Hồ Chí Minh"
+      ],
+      "mention_count": 2,
+      "source_rows": [
+        5,
+        6
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0099",
+          "surface": "Chủ tịch Hồ Chí Minh",
+          "source_row": 5,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A7",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0100",
+          "surface": "Hồ Chí Minh",
+          "source_row": 6,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A8",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0070",
+      "name": "Hội nghị Ban thường vụ Trung ương",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        24
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0101",
+          "surface": "Hội nghị Ban thường vụ Trung ương",
+          "source_row": 24,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%19Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0071",
+      "name": "kho lương thực ở bến Sáu Kho",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        29
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0102",
+          "surface": "kho lương thực ở bến Sáu Kho",
+          "source_row": 29,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%24Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0072",
+      "name": "kho thóc của Nhật, Pháp",
+      "alias": [],
+      "mention_count": 4,
+      "source_rows": [
+        25
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0103",
+          "surface": "kho thóc của Nhật, Pháp",
+          "source_row": 25,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%20Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0104",
+          "surface": "kho thóc của Nhật, Pháp",
+          "source_row": 25,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%20Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0105",
+          "surface": "kho thóc của Nhật, Pháp",
+          "source_row": 25,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%20Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0106",
+          "surface": "kho thóc của Nhật, Pháp",
+          "source_row": 25,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%20Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0073",
+      "name": "Kho thóc gạo của Nhật",
+      "alias": [
+        "kho thóc, gạo của Nhật"
+      ],
+      "mention_count": 5,
+      "source_rows": [
+        27,
+        28
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0107",
+          "surface": "kho thóc gạo của Nhật",
+          "source_row": 27,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%22Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0108",
+          "surface": "kho thóc gạo của Nhật",
+          "source_row": 27,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%22Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0109",
+          "surface": "kho thóc gạo của Nhật",
+          "source_row": 27,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%22Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0110",
+          "surface": "kho thóc gạo của Nhật",
+          "source_row": 27,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%22Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0111",
+          "surface": "kho thóc, gạo của Nhật",
+          "source_row": 28,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%23Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0074",
+      "name": "Khu Giải phóng Việt Bắc",
+      "alias": [],
+      "mention_count": 13,
+      "source_rows": [
+        17
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0112",
+          "surface": "Khu Giải phóng Việt Bắc",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0113",
+          "surface": "Khu Giải phóng Việt Bắc",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0114",
+          "surface": "Khu Giải phóng Việt Bắc",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0115",
+          "surface": "Khu Giải phóng Việt Bắc",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0116",
+          "surface": "Khu Giải phóng Việt Bắc",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0117",
+          "surface": "Khu Giải phóng Việt Bắc",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0118",
+          "surface": "Khu Giải phóng Việt Bắc",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0119",
+          "surface": "Khu Giải phóng Việt Bắc",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0120",
+          "surface": "Khu Giải phóng Việt Bắc",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0121",
+          "surface": "Khu Giải phóng Việt Bắc",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0122",
+          "surface": "Khu Giải phóng Việt Bắc",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0123",
+          "surface": "Khu Giải phóng Việt Bắc",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0124",
+          "surface": "Khu Giải phóng Việt Bắc",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0075",
+      "name": "Khóa huấn luyện giáo viên Bình dân học vụ đầu tiên",
+      "alias": [
+        "Khoá huấn luyện giáo viên Bình dân học vụ đầu tiên"
+      ],
+      "mention_count": 2,
+      "source_rows": [
+        6
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0125",
+          "surface": "Khóa huấn luyện giáo viên Bình dân học vụ đầu tiên",
+          "source_row": 6,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A8",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0126",
+          "surface": "Khoá huấn luyện giáo viên Bình dân học vụ đầu tiên",
+          "source_row": 6,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A8",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0076",
+      "name": "khởi nghĩa chống Nhật từng phần",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        17
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0127",
+          "surface": "khởi nghĩa chống Nhật từng phần",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0077",
+      "name": "khởi nghĩa Cách mạng tháng Tám",
+      "alias": [],
+      "mention_count": 2,
+      "source_rows": [
+        31
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0128",
+          "surface": "khởi nghĩa Cách mạng tháng Tám",
+          "source_row": 31,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%26Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0129",
+          "surface": "khởi nghĩa Cách mạng tháng Tám",
+          "source_row": 31,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%26Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0078",
+      "name": "Khởi nghĩa giành chính quyền tại Việt Bắc",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        19
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0130",
+          "surface": "Khởi nghĩa giành chính quyền tại Việt Bắc",
+          "source_row": 19,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%14Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0079",
+      "name": "kế hoạch xoá nạn mù chữ",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        10
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0131",
+          "surface": "kế hoạch xoá nạn mù chữ",
+          "source_row": 10,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A12",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0080",
+      "name": "Liên tỉnh ủy Cao-Bắc-Lạng",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        19
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0132",
+          "surface": "Liên tỉnh ủy Cao-Bắc-Lạng",
+          "source_row": 19,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%14Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0081",
+      "name": "lương",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        6
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0133",
+          "surface": "lương",
+          "source_row": 6,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A8",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0082",
+      "name": "Lạng Sơn",
+      "alias": [],
+      "mention_count": 2,
+      "source_rows": [
+        17,
+        19
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0134",
+          "surface": "Lạng Sơn",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0135",
+          "surface": "Lạng Sơn",
+          "source_row": 19,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%14Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0083",
+      "name": "lực lượng",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        16
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0136",
+          "surface": "lực lượng",
+          "source_row": 16,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%11Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0084",
+      "name": "lực lượng Pháp theo phái Charles de Gaulle",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        12
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0137",
+          "surface": "lực lượng Pháp theo phái Charles de Gaulle",
+          "source_row": 12,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%7Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0085",
+      "name": "miền Nam",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        10
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0138",
+          "surface": "miền Nam",
+          "source_row": 10,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A12",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0086",
+      "name": "miền Nam Việt Nam",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        31
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0139",
+          "surface": "miền Nam Việt Nam",
+          "source_row": 31,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%26Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0087",
+      "name": "Mặt trận Việt Minh",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        31
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0140",
+          "surface": "Mặt trận Việt Minh",
+          "source_row": 31,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%26Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0088",
+      "name": "Mễ Trì",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        30
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0141",
+          "surface": "Mễ Trì",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0089",
+      "name": "mỏ Mạo Khê",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        30
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0142",
+          "surface": "mỏ Mạo Khê",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0090",
+      "name": "mỏ Tràng Bạch",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        30
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0143",
+          "surface": "mỏ Tràng Bạch",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0091",
+      "name": "mỏ Uông Bí",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        30
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0144",
+          "surface": "mỏ Uông Bí",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0092",
+      "name": "Một số địa phương ở Nam Kỳ như Mỹ Tho",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        23
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0145",
+          "surface": "Một số địa phương ở Nam Kỳ như Mỹ Tho",
+          "source_row": 23,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%18Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0093",
+      "name": "ngân sách",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        6
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0146",
+          "surface": "ngân sách",
+          "source_row": 6,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A8",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0094",
+      "name": "Người chưa đọc được chữ",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        8
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0147",
+          "surface": "Người chưa đọc được chữ",
+          "source_row": 8,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A10",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0095",
+      "name": "Người dân Bắc Bộ và Trung Bộ biết đọc biết viết",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        8
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0148",
+          "surface": "Người dân Bắc Bộ và Trung Bộ biết đọc biết viết",
+          "source_row": 8,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A10",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0096",
+      "name": "Người dân Hà Đông",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        27
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0149",
+          "surface": "Người dân Hà Đông",
+          "source_row": 27,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%22Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0097",
+      "name": "Người dân Hòn Gai",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        27
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0150",
+          "surface": "Người dân Hòn Gai",
+          "source_row": 27,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%22Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0098",
+      "name": "Người dân Hưng Yên",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        27
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0151",
+          "surface": "Người dân Hưng Yên",
+          "source_row": 27,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%22Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0099",
+      "name": "Người dân ngoại thành Hà Nội",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        28
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0152",
+          "surface": "Người dân ngoại thành Hà Nội",
+          "source_row": 28,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%23Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0100",
+      "name": "Người dân Sơn Tây",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        27
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0153",
+          "surface": "Người dân Sơn Tây",
+          "source_row": 27,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%22Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0101",
+      "name": "Người dân Thanh Hóa, Nghệ An, Hà Tĩnh, Quảng Bình",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        28
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0154",
+          "surface": "Người dân Thanh Hóa, Nghệ An, Hà Tĩnh, Quảng Bình",
+          "source_row": 28,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%23Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0102",
+      "name": "người dân đi học",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        7
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0155",
+          "surface": "người dân đi học",
+          "source_row": 7,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A9",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0103",
+      "name": "Nha Bình dân học vụ",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        6
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0156",
+          "surface": "Nha Bình dân học vụ",
+          "source_row": 6,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A8",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0104",
+      "name": "nhiều quận trưởng tỉnh trưởng",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        23
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0157",
+          "surface": "nhiều quận trưởng tỉnh trưởng",
+          "source_row": 23,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%18Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0105",
+      "name": "nhiều vùng căn cứ cộng sản",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        17
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0158",
+          "surface": "nhiều vùng căn cứ cộng sản",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0106",
+      "name": "nhiều vùng rộng lớn từ tay Nhật",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        17
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0159",
+          "surface": "nhiều vùng rộng lớn từ tay Nhật",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0107",
+      "name": "Nhiều địa phương tại Đông Dương",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        14
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0160",
+          "surface": "Nhiều địa phương tại Đông Dương",
+          "source_row": 14,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%9Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0108",
+      "name": "Nho Quan",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        26
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0161",
+          "surface": "Nho Quan",
+          "source_row": 26,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%21Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0109",
+      "name": "nhà tù Buôn Ma Thuột",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        22
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0162",
+          "surface": "nhà tù Buôn Ma Thuột",
+          "source_row": 22,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%17Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0110",
+      "name": "nhà tù Hỏa Lò",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        22
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0163",
+          "surface": "nhà tù Hỏa Lò",
+          "source_row": 22,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%17Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0111",
+      "name": "nhà tù Hội An",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        22
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0164",
+          "surface": "nhà tù Hội An",
+          "source_row": 22,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%17Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0112",
+      "name": "nhà tù Nghĩa Lộ",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        22
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0165",
+          "surface": "nhà tù Nghĩa Lộ",
+          "source_row": 22,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%17Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0113",
+      "name": "nhà tù Sơn La",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        22
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0166",
+          "surface": "nhà tù Sơn La",
+          "source_row": 22,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%17Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0114",
+      "name": "Nhân dân các huyện phía Nam Hải Dương",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        27
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0167",
+          "surface": "Nhân dân các huyện phía Nam Hải Dương",
+          "source_row": 27,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%22Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0115",
+      "name": "Nhân dân Hải Dương",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        27
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0168",
+          "surface": "Nhân dân Hải Dương",
+          "source_row": 27,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%22Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0116",
+      "name": "Nhật",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        30
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0169",
+          "surface": "Nhật",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0117",
+      "name": "Nhật Bản",
+      "alias": [
+        "phát xít Nhật",
+        "Đế quốc Nhật Bản",
+        "đế quốc Nhật Bản"
+      ],
+      "mention_count": 8,
+      "source_rows": [
+        11,
+        13,
+        14,
+        15,
+        16
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0170",
+          "surface": "đế quốc Nhật Bản",
+          "source_row": 11,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%6Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0171",
+          "surface": "Nhật Bản",
+          "source_row": 13,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%8Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0172",
+          "surface": "Đế quốc Nhật Bản",
+          "source_row": 14,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%9Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0173",
+          "surface": "Đế quốc Nhật Bản",
+          "source_row": 14,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%9Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0174",
+          "surface": "phát xít Nhật",
+          "source_row": 14,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%9Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0175",
+          "surface": "Nhật Bản",
+          "source_row": 15,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%10Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0176",
+          "surface": "Nhật Bản",
+          "source_row": 15,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%10Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0177",
+          "surface": "đế quốc Nhật Bản",
+          "source_row": 16,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%11Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0118",
+      "name": "Nhật-Pháp bắn nhau và hành động của chúng ta",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        16
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0178",
+          "surface": "Nhật-Pháp bắn nhau và hành động của chúng ta",
+          "source_row": 16,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%11Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0119",
+      "name": "nạn mù chữ tại miền Nam",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        10
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0179",
+          "surface": "nạn mù chữ tại miền Nam",
+          "source_row": 10,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A12",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0120",
+      "name": "nạn đói trầm trọng",
+      "alias": [],
+      "mention_count": 2,
+      "source_rows": [
+        24
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0180",
+          "surface": "nạn đói trầm trọng",
+          "source_row": 24,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%19Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0181",
+          "surface": "nạn đói trầm trọng",
+          "source_row": 24,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%19Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0121",
+      "name": "Nạn đói Ất Dậu",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        15
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0182",
+          "surface": "Nạn đói Ất Dậu",
+          "source_row": 15,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%10Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0122",
+      "name": "nền kinh tế Đông Dương",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        15
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0183",
+          "surface": "nền kinh tế Đông Dương",
+          "source_row": 15,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%10Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0123",
+      "name": "Paris",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        12
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0184",
+          "surface": "Paris",
+          "source_row": 12,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%7Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0124",
+      "name": "phe Trục",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        12
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0185",
+          "surface": "phe Trục",
+          "source_row": 12,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%7Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0125",
+      "name": "phe Đồng minh",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        12
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0186",
+          "surface": "phe Đồng minh",
+          "source_row": 12,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%7Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0126",
+      "name": "phiên họp Chính phủ đầu tiên",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        5
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0187",
+          "surface": "phiên họp Chính phủ đầu tiên",
+          "source_row": 5,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A7",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0127",
+      "name": "phiên họp đầu tiên",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        5
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0188",
+          "surface": "phiên họp đầu tiên",
+          "source_row": 5,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A7",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0128",
+      "name": "Phong trào",
+      "alias": [],
+      "mention_count": 2,
+      "source_rows": [
+        17
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0189",
+          "surface": "Phong trào",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0190",
+          "surface": "Phong trào",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0129",
+      "name": "phong trào quần chúng Việt Nam nổi dậy chống đế quốc Nhật Bản",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        11
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0191",
+          "surface": "phong trào quần chúng Việt Nam nổi dậy chống đế quốc Nhật Bản",
+          "source_row": 11,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%6Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0130",
+      "name": "Phong trào Thanh niên Tiền phong",
+      "alias": [],
+      "mention_count": 2,
+      "source_rows": [
+        31
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0192",
+          "surface": "Phong trào Thanh niên Tiền phong",
+          "source_row": 31,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%26Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0193",
+          "surface": "Phong trào Thanh niên Tiền phong",
+          "source_row": 31,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%26Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0131",
+      "name": "phá kho thóc",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        24
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0194",
+          "surface": "phá kho thóc",
+          "source_row": 24,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%19Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0132",
+      "name": "Pháp trên toàn cõi Đông Dương",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        13
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0195",
+          "surface": "Pháp trên toàn cõi Đông Dương",
+          "source_row": 13,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%8Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0133",
+      "name": "Phú Bình",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        20
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0196",
+          "surface": "Phú Bình",
+          "source_row": 20,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%15Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0134",
+      "name": "Phú Thọ",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        17
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0197",
+          "surface": "Phú Thọ",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0135",
+      "name": "phấn và gạch để viết",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        6
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0198",
+          "surface": "phấn và gạch để viết",
+          "source_row": 6,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A8",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0136",
+      "name": "Phụ Dực",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        26
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0199",
+          "surface": "Phụ Dực",
+          "source_row": 26,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%21Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0137",
+      "name": "quân nổi dậy",
+      "alias": [],
+      "mention_count": 3,
+      "source_rows": [
+        20
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0200",
+          "surface": "quân nổi dậy",
+          "source_row": 20,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%15Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0201",
+          "surface": "quân nổi dậy",
+          "source_row": 20,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%15Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0202",
+          "surface": "quân nổi dậy",
+          "source_row": 20,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%15Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0138",
+      "name": "Quân Việt Minh",
+      "alias": [],
+      "mention_count": 3,
+      "source_rows": [
+        18
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0203",
+          "surface": "Quân Việt Minh",
+          "source_row": 18,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%13Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0204",
+          "surface": "Quân Việt Minh",
+          "source_row": 18,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%13Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0205",
+          "surface": "Quân Việt Minh",
+          "source_row": 18,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%13Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0139",
+      "name": "Quân đội Nhật",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        18
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0206",
+          "surface": "Quân đội Nhật",
+          "source_row": 18,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%13Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0140",
+      "name": "quần chúng",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        20
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0207",
+          "surface": "quần chúng",
+          "source_row": 20,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%15Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0141",
+      "name": "Quần chúng tại Bắc Giang",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        25
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0208",
+          "surface": "Quần chúng tại Bắc Giang",
+          "source_row": 25,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%20Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0142",
+      "name": "Quần chúng tại Bắc Ninh",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        25
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0209",
+          "surface": "Quần chúng tại Bắc Ninh",
+          "source_row": 25,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%20Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0143",
+      "name": "Quần chúng tại Phú Thọ",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        25
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0210",
+          "surface": "Quần chúng tại Phú Thọ",
+          "source_row": 25,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%20Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0144",
+      "name": "Quần chúng tại Phúc Yên",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        25
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0211",
+          "surface": "Quần chúng tại Phúc Yên",
+          "source_row": 25,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%20Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0145",
+      "name": "Quần chúng tại Vĩnh Yên",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        25
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0212",
+          "surface": "Quần chúng tại Vĩnh Yên",
+          "source_row": 25,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%20Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0146",
+      "name": "rộng lớn nhất",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        17
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0213",
+          "surface": "rộng lớn nhất",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0147",
+      "name": "Sài Gòn",
+      "alias": [],
+      "mention_count": 2,
+      "source_rows": [
+        31
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0214",
+          "surface": "Sài Gòn",
+          "source_row": 31,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%26Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0215",
+          "surface": "Sài Gòn",
+          "source_row": 31,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%26Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0148",
+      "name": "súng của Nhật ở Ngọc Hà",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        30
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0216",
+          "surface": "súng của Nhật ở Ngọc Hà",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0149",
+      "name": "súng của Nhật ở Phà Đen",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        30
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0217",
+          "surface": "súng của Nhật ở Phà Đen",
+          "source_row": 30,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%25Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0150",
+      "name": "Sắc lệnh 19/SL",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        3
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0218",
+          "surface": "Sắc lệnh 19/SL",
+          "source_row": 3,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A5",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0151",
+      "name": "Sắc lệnh 20/SL",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        3
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0219",
+          "surface": "Sắc lệnh 20/SL",
+          "source_row": 3,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A5",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0152",
+      "name": "Sự kiện phá kho thóc",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        24
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0220",
+          "surface": "Sự kiện phá kho thóc",
+          "source_row": 24,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%19Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0153",
+      "name": "Thái Nguyên",
+      "alias": [],
+      "mention_count": 2,
+      "source_rows": [
+        17,
+        19
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0221",
+          "surface": "Thái Nguyên",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0222",
+          "surface": "Thái Nguyên",
+          "source_row": 19,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%14Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0154",
+      "name": "Thư Trì",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        26
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0223",
+          "surface": "Thư Trì",
+          "source_row": 26,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%21Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0155",
+      "name": "Thường vụ Trung ương Đảng Cộng sản Đông Dương",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        16
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0224",
+          "surface": "Thường vụ Trung ương Đảng Cộng sản Đông Dương",
+          "source_row": 16,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%11Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0156",
+      "name": "Thực dân Pháp tại Đông Dương",
+      "alias": [
+        "thực dân Pháp ở Đông dương"
+      ],
+      "mention_count": 3,
+      "source_rows": [
+        11,
+        16
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0225",
+          "surface": "thực dân Pháp ở Đông dương",
+          "source_row": 11,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%6Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0226",
+          "surface": "thực dân Pháp tại Đông Dương",
+          "source_row": 16,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%11Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0227",
+          "surface": "thực dân Pháp tại Đông Dương",
+          "source_row": 16,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%11Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0157",
+      "name": "Tiên Hưng",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        26
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0228",
+          "surface": "Tiên Hưng",
+          "source_row": 26,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%21Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0158",
+      "name": "Tiền Hải",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        26
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0229",
+          "surface": "Tiền Hải",
+          "source_row": 26,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%21Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0159",
+      "name": "toàn quốc",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        7
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0230",
+          "surface": "toàn quốc",
+          "source_row": 7,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A9",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0160",
+      "name": "trại tập trung Ba Tơ",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        23
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0231",
+          "surface": "trại tập trung Ba Tơ",
+          "source_row": 23,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%18Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0161",
+      "name": "Tuyên Quang",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        19
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0232",
+          "surface": "Tuyên Quang",
+          "source_row": 19,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%14Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0162",
+      "name": "Tuyên Quang, Yên Bái",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        17
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0233",
+          "surface": "Tuyên Quang, Yên Bái",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0163",
+      "name": "tàu thuyền chở gạo của người Nhật",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        29
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0234",
+          "surface": "tàu thuyền chở gạo của người Nhật",
+          "source_row": 29,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%24Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0164",
+      "name": "Tôn Đức Thắng",
+      "alias": [
+        "Chủ tịch nước"
+      ],
+      "mention_count": 3,
+      "source_rows": [
+        10
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0235",
+          "surface": "Tôn Đức Thắng",
+          "source_row": 10,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A12",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0236",
+          "surface": "Chủ tịch nước",
+          "source_row": 10,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A12",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0237",
+          "surface": "Tôn Đức Thắng",
+          "source_row": 10,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A12",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0165",
+      "name": "Tỉnh ủy Bắc Ninh",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        21
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0238",
+          "surface": "Tỉnh ủy Bắc Ninh",
+          "source_row": 21,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%16Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0166",
+      "name": "tổ chức công nhân cứu quốc",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        18
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0239",
+          "surface": "tổ chức công nhân cứu quốc",
+          "source_row": 18,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%13Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0167",
+      "name": "Tổng khởi nghĩa",
+      "alias": [],
+      "mention_count": 3,
+      "source_rows": [
+        16,
+        17
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0240",
+          "surface": "tổng khởi nghĩa",
+          "source_row": 16,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%11Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0241",
+          "surface": "tổng khởi nghĩa",
+          "source_row": 16,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%11Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0242",
+          "surface": "Tổng khởi nghĩa",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0168",
+      "name": "Việt Minh",
+      "alias": [
+        "phe Việt Minh"
+      ],
+      "mention_count": 10,
+      "source_rows": [
+        16,
+        17,
+        19
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0243",
+          "surface": "phe Việt Minh",
+          "source_row": 16,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%11Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0244",
+          "surface": "Việt Minh",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0245",
+          "surface": "Việt Minh",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0246",
+          "surface": "Việt Minh",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0247",
+          "surface": "Việt Minh",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0248",
+          "surface": "Việt Minh",
+          "source_row": 19,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%14Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0249",
+          "surface": "Việt Minh",
+          "source_row": 19,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%14Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0250",
+          "surface": "Việt Minh",
+          "source_row": 19,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%14Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0251",
+          "surface": "Việt Minh",
+          "source_row": 19,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%14Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0252",
+          "surface": "Việt Minh",
+          "source_row": 19,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%14Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0169",
+      "name": "Việt Nam",
+      "alias": [],
+      "mention_count": 5,
+      "source_rows": [
+        3,
+        4
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0253",
+          "surface": "Việt Nam",
+          "source_row": 3,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A5",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0254",
+          "surface": "Việt Nam",
+          "source_row": 3,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A5",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0255",
+          "surface": "Việt Nam",
+          "source_row": 4,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A6",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0256",
+          "surface": "Việt Nam",
+          "source_row": 4,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A6",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0257",
+          "surface": "Việt Nam",
+          "source_row": 4,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A6",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0170",
+      "name": "Việt Nam Cộng hòa tại miền Nam",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        10
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0258",
+          "surface": "Việt Nam Cộng hòa tại miền Nam",
+          "source_row": 10,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A12",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0171",
+      "name": "Vĩnh Yên",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        17
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0259",
+          "surface": "Vĩnh Yên",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0172",
+      "name": "Vũ Tiên",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        26
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0260",
+          "surface": "Vũ Tiên",
+          "source_row": 26,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%21Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0173",
+      "name": "vấn đề \"giặc dốt",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        3
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0261",
+          "surface": "vấn đề \"giặc dốt",
+          "source_row": 3,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A5",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0174",
+      "name": "vấn đề \"giặc đói",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        3
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0262",
+          "surface": "vấn đề \"giặc đói",
+          "source_row": 3,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A5",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0175",
+      "name": "Yên Bái",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        17
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0263",
+          "surface": "Yên Bái",
+          "source_row": 17,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%12Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0176",
+      "name": "Yên Thế",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        20
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0264",
+          "surface": "Yên Thế",
+          "source_row": 20,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%15Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0177",
+      "name": "Đoàn Thanh niên Tiền phong",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        31
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0265",
+          "surface": "Đoàn Thanh niên Tiền phong",
+          "source_row": 31,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%26Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0178",
+      "name": "Đông Dương",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        12
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0266",
+          "surface": "Đông Dương",
+          "source_row": 12,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%7Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0179",
+      "name": "Đảng Cộng sản Đông Dương",
+      "alias": [],
+      "mention_count": 3,
+      "source_rows": [
+        16,
+        23
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0267",
+          "surface": "Đảng Cộng sản Đông Dương",
+          "source_row": 16,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%11Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0268",
+          "surface": "Đảng Cộng sản Đông Dương",
+          "source_row": 16,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%11Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0269",
+          "surface": "Đảng Cộng sản Đông Dương",
+          "source_row": 23,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%18Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0180",
+      "name": "Đảng viên cộng sản và cán bộ Việt Minh",
+      "alias": [],
+      "mention_count": 6,
+      "source_rows": [
+        22
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0270",
+          "surface": "Đảng viên cộng sản và cán bộ Việt Minh",
+          "source_row": 22,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%17Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0271",
+          "surface": "Đảng viên cộng sản và cán bộ Việt Minh",
+          "source_row": 22,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%17Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0272",
+          "surface": "Đảng viên cộng sản và cán bộ Việt Minh",
+          "source_row": 22,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%17Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0273",
+          "surface": "Đảng viên cộng sản và cán bộ Việt Minh",
+          "source_row": 22,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%17Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0274",
+          "surface": "Đảng viên cộng sản và cán bộ Việt Minh",
+          "source_row": 22,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%17Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0275",
+          "surface": "Đảng viên cộng sản và cán bộ Việt Minh",
+          "source_row": 22,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%17Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0181",
+      "name": "đảng viên và cán bộ cộng sản",
+      "alias": [],
+      "mention_count": 2,
+      "source_rows": [
+        23
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0276",
+          "surface": "đảng viên và cán bộ cộng sản",
+          "source_row": 23,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%18Bc",
+          "role": "subject"
+        },
+        {
+          "id": "MENTION-0277",
+          "surface": "đảng viên và cán bộ cộng sản",
+          "source_row": 23,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%18Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0182",
+      "name": "đầu chợ",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        8
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0278",
+          "surface": "đầu chợ",
+          "source_row": 8,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A10",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0183",
+      "name": "đồn Bần Yên Nhân",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        21
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0279",
+          "surface": "đồn Bần Yên Nhân",
+          "source_row": 21,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%16Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0184",
+      "name": "độc lập",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        4
+      ],
+      "article_ids": [
+        "binh_dan_hoc_vu"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0280",
+          "surface": "độc lập",
+          "source_row": 4,
+          "article_id": "binh_dan_hoc_vu",
+          "source_url": "https://vi.wikipedia.org/wiki/B%C3%ACnh_d%C3%A2n_h%E1%BB%8Dc_v%E1%BB%A6",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0185",
+      "name": "đội du kích Ba Tơ",
+      "alias": [],
+      "mention_count": 2,
+      "source_rows": [
+        23
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0281",
+          "surface": "đội du kích Ba Tơ",
+          "source_row": 23,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%18Bc",
+          "role": "object"
+        },
+        {
+          "id": "MENTION-0282",
+          "surface": "đội du kích Ba Tơ",
+          "source_row": 23,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%18Bc",
+          "role": "object"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0186",
+      "name": "Đội dân quân - tự vệ và du kích địa phương",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        21
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0283",
+          "surface": "Đội dân quân - tự vệ và du kích địa phương",
+          "source_row": 21,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%16Bc",
+          "role": "subject"
+        }
+      ]
+    },
+    {
+      "id": "ENT-0187",
+      "name": "Ủy ban giải phóng",
+      "alias": [],
+      "mention_count": 1,
+      "source_rows": [
+        20
+      ],
+      "article_ids": [
+        "cao_trao_khang_nhat_cuu_nuoc"
+      ],
+      "mentions": [
+        {
+          "id": "MENTION-0284",
+          "surface": "Ủy ban giải phóng",
+          "source_row": 20,
+          "article_id": "cao_trao_khang_nhat_cuu_nuoc",
+          "source_url": "https://vi.wikipedia.org/wiki/Cao_tr%C3%A0o_kh%C3%A1ng_Nh%E1%BA%ADt_c%E1%BB%A9u_n%C6%B0%E1%BB%15Bc",
+          "role": "object"
+        }
+      ]
+    }
+  ]
+}

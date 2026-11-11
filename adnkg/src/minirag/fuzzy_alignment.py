@@ -5,6 +5,9 @@ from typing import Dict, List, Optional, Tuple, Set
 
 from .schema import parse_time_range
 
+MIN_EVENT_DESCRIPTION_SHARED_TOKENS = 3
+MIN_EVENT_DESCRIPTION_COVERAGE = 0.5
+
 
 def parse_entity_tokens(name: str, alternate_names: Optional[List[str]]) -> Set[str]:
     """Extracts uppercase normalized word tokens from a name and its alternate names."""
@@ -55,6 +58,58 @@ def _neighbourhood_similarity(neighbors_a: Set[str], neighbors_b: Set[str]) -> f
     return max(sim_a, sim_b)
 
 
+def _identity_context_sufficient(
+    name_a: str,
+    type_a: str,
+    name_b: str,
+    type_b: str,
+    shared_neighbor_count: int,
+    min_shared_neighbors: int,
+) -> bool:
+    partial_organization_name = (
+        type_a == "ORGANIZATION"
+        and type_b == "ORGANIZATION"
+        and name_a.strip().casefold() != name_b.strip().casefold()
+    )
+    return not partial_organization_name or shared_neighbor_count >= min_shared_neighbors
+
+
+def _event_description_support(desc_a: str, desc_b: str) -> bool:
+    stop_words = {
+        "A", "AN", "THE", "IN", "OF", "TO", "FOR", "AND", "BY", "ON",
+        "WITH", "AMONG", "ITS", "AS", "AT", "FROM",
+    }
+    tokens_a = set(re.findall(r"\w+", str(desc_a).upper())) - stop_words
+    tokens_b = set(re.findall(r"\w+", str(desc_b).upper())) - stop_words
+    if not tokens_a or not tokens_b:
+        return False
+    shared = tokens_a & tokens_b
+    return (
+        len(shared) >= MIN_EVENT_DESCRIPTION_SHARED_TOKENS
+        and len(shared) / min(len(tokens_a), len(tokens_b))
+        >= MIN_EVENT_DESCRIPTION_COVERAGE
+    )
+
+
+def _temporal_merge_supported(
+    type_a: str,
+    type_b: str,
+    time_status: str,
+    desc_a: str,
+    desc_b: str,
+    identity_similarity: float,
+    identity_threshold: float,
+) -> bool:
+    if time_status != "mismatch":
+        return True
+    return (
+        type_a == "EVENT"
+        and type_b == "EVENT"
+        and identity_similarity >= identity_threshold
+        and _event_description_support(desc_a, desc_b)
+    )
+
+
 def _temporal_status(time_a: Optional[str], time_b: Optional[str]) -> str:
     """
     Determines time relationship between time_a and time_b.
@@ -89,7 +144,9 @@ class FloraEntityAligner:
       ACCEPT if:
         1. identity_similarity >= thres and time_status == 'overlap'
         2. identity_similarity >= thres and time_status == 'no_info'
-        3. neighbourhood_similarity >= thres
+        3. neighbourhood_similarity >= thres with shared-neighbor support and no
+           unsupported temporal mismatch
+        4. identity_similarity >= thres and a mismatched EVENT pair has description support
     """
 
     def __init__(
@@ -102,6 +159,9 @@ class FloraEntityAligner:
     ):
         self.global_config = global_config
         self.embedding_func = embedding_func
+        self.min_shared_neighbors = max(
+            1, int(global_config.get("fl_min_shared_neighbors", 1))
+        )
 
         # Load threshold settings
         self.thres_sim = (
@@ -137,6 +197,15 @@ class FloraEntityAligner:
             return m_nodes, m_edges
 
         parent = {e: e for e in entities}
+        cluster_types = {
+            entity: (
+                {str(m_nodes[entity][0].get("entity_type", "UNKNOWN")).upper()}
+                - {"", "UNKNOWN"}
+                if entity in m_nodes and m_nodes[entity]
+                else set()
+            )
+            for entity in entities
+        }
 
         def find(n):
             if parent[n] == n:
@@ -148,10 +217,18 @@ class FloraEntityAligner:
             r1 = find(n1)
             r2 = find(n2)
             if r1 != r2:
+                if (
+                    cluster_types[r1]
+                    and cluster_types[r2]
+                    and cluster_types[r1] != cluster_types[r2]
+                ):
+                    return
                 if len(r1) >= len(r2):
                     parent[r2] = r1
+                    cluster_types[r1].update(cluster_types.pop(r2))
                 else:
                     parent[r1] = r2
+                    cluster_types[r2].update(cluster_types.pop(r1))
 
         # Cluster similar nodes within chunk
         for i in range(len(entities)):
@@ -308,6 +385,24 @@ Answer with ONLY "YES" or "NO"."""
 
                 c_neighbors = await self._get_core_neighbors(knowledge_graph_inst, c_ent)
                 neigh_sim = _neighbourhood_similarity(s_neighbors, c_neighbors)
+                shared_neighbor_count = len(s_neighbors & c_neighbors)
+                identity_context_sufficient = _identity_context_sufficient(
+                    s_ent,
+                    s_type,
+                    c_ent,
+                    c_type,
+                    shared_neighbor_count,
+                    self.min_shared_neighbors,
+                )
+                temporal_merge_supported = _temporal_merge_supported(
+                    s_type,
+                    c_type,
+                    t_status,
+                    s_node.get("description", ""),
+                    c_node.get("description", ""),
+                    id_sim,
+                    self.thres_map,
+                )
 
                 # Decision Rules
                 should_merge = False
@@ -317,17 +412,40 @@ Answer with ONLY "YES" or "NO"."""
                     should_merge = await self._llm_decide_merge(s_ent, c_ent, s_node, c_node)
                     decision_reason = "LLM decision"
                 else:
-                    if id_sim >= self.thres_map and t_status == "overlap":
+                    if (
+                        id_sim >= self.thres_map
+                        and t_status == "overlap"
+                        and identity_context_sufficient
+                    ):
                         should_merge = True
                         decision_reason = f"Identity sim ({id_sim:.2f}) + Time overlap"
-                    elif id_sim >= self.thres_map and t_status == "no_info":
+                    elif (
+                        id_sim >= self.thres_map
+                        and t_status == "no_info"
+                        and identity_context_sufficient
+                    ):
                         should_merge = True
                         decision_reason = f"Identity sim ({id_sim:.2f}) + No time info"
-                    elif neigh_sim >= self.thres_map:
+                    elif (
+                        neigh_sim >= self.thres_map
+                        and shared_neighbor_count >= self.min_shared_neighbors
+                        and temporal_merge_supported
+                    ):
                         should_merge = True
                         decision_reason = f"Neighbourhood sim ({neigh_sim:.2f})"
                     elif id_sim >= self.thres_map and t_status == "mismatch":
-                        is_temporal = True
+                        if temporal_merge_supported:
+                            should_merge = True
+                            decision_reason = (
+                                f"Identity sim ({id_sim:.2f}) + Event description support"
+                            )
+                        else:
+                            is_temporal = True
+
+                if should_merge and (
+                    not identity_context_sufficient or not temporal_merge_supported
+                ):
+                    should_merge = False
 
                 if should_merge:
                     best_match = c_ent
@@ -377,6 +495,8 @@ Answer with ONLY "YES" or "NO"."""
         for (src, tgt), edge_list in m_edges.items():
             new_src = name_mapping.get(src, src)
             new_tgt = name_mapping.get(tgt, tgt)
+            if not isinstance(new_src, str) or not isinstance(new_tgt, str):
+                raise TypeError("Graph edge endpoints must be strings.")
             for edge in edge_list:
                 edge["src_id"] = new_src
                 edge["tgt_id"] = new_tgt
