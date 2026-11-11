@@ -1,14 +1,19 @@
 import os
+from pathlib import Path
+
 import pandas as pd
 import requests
 import json
 from tqdm import tqdm
+from dotenv import load_dotenv
+
+load_dotenv(Path(__file__).with_name(".env"), override=False)
 
 
 
-LLM_ENDPOINT = "http://172.16.125.200:33040/v1/chat/completions"
-LLM_API_KEY = "qwen35b@"
-MODEL_NAME = "qwen36"
+LLM_ENDPOINT = os.getenv("QNA_EVAL_ENDPOINT", "http://localhost:11434/v1/chat/completions")
+LLM_API_KEY = os.getenv("QNA_EVAL_API_KEY", "ollama")
+MODEL_NAME = os.getenv("QNA_EVAL_MODEL", "qwen3.5:9b")
 
 def evaluate_response(question, gold, rag):
     prompt = f"""You are an expert judge evaluating a Question Answering system.
@@ -25,7 +30,7 @@ System Response: {rag}"""
 
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {LLM_API_KEY}"
+        "Authorization": f"Bearer {LLM_API_KEY}",
     }
     data = {
         "model": MODEL_NAME,
@@ -40,24 +45,30 @@ System Response: {rag}"""
     try:
         response = requests.post(LLM_ENDPOINT, headers=headers, json=data, timeout=30)
         response.raise_for_status()
-        content = response.json()["choices"][0]["message"]["content"]
-        # Extract JSON if surrounded by markdown
-        if "```json" in content:
-            content = content.split("```json")[1].split("```")[0].strip()
-        result = json.loads(content)
-        return result.get("acc", False), result.get("err", False)
-    except Exception as e:
-        print(f"Error evaluating: {e}")
-        return False, False
+    except requests.RequestException as exc:
+        raise RuntimeError("Question-answer judge request failed.") from exc
+
+    content = response.json()["choices"][0]["message"]["content"]
+    if "```json" in content:
+        content = content.split("```json")[1].split("```")[0].strip()
+    result = json.loads(content)
+    if (
+        not isinstance(result, dict)
+        or not isinstance(result.get("acc"), bool)
+        or not isinstance(result.get("err"), bool)
+    ):
+        raise ValueError("Question-answer judge must return boolean acc and err fields.")
+    return result["acc"], result["err"]
 
 def evaluate_csv(filepath):
     print(f"Evaluating {filepath}...")
     if not os.path.exists(filepath):
-        print(f"File not found: {filepath}")
-        return
+        raise FileNotFoundError(f"Answer CSV does not exist: {filepath}")
     
     df = pd.read_csv(filepath)
     total = len(df)
+    if total == 0:
+        raise ValueError(f"Answer CSV contains no questions: {filepath}")
     acc_count = 0
     err_count = 0
     
