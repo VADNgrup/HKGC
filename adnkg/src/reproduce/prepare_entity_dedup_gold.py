@@ -119,6 +119,19 @@ def clean_name(value: str) -> str:
     return value
 
 
+def deduplicate_aliases(names: set[str], canonical_name: str) -> list[str]:
+    """Keep one deterministic display form for each case-insensitive alias."""
+    canonical_key = normalize_name(canonical_name)
+    aliases_by_key: dict[str, str] = {}
+    for name in sorted(
+        names, key=lambda value: (normalize_name(value), value.casefold(), value)
+    ):
+        alias_key = normalize_name(name)
+        if alias_key and alias_key != canonical_key:
+            aliases_by_key.setdefault(alias_key, name)
+    return sorted(aliases_by_key.values(), key=lambda value: (value.casefold(), value))
+
+
 def extract_tuple_mentions(consensus: str) -> list[tuple[str, str]]:
     mentions: list[tuple[str, str]] = []
     for raw_tuple in PARENTHESIZED_TUPLE.findall(consensus):
@@ -215,14 +228,7 @@ def build_inventory(source_path: Path) -> dict:
         canonical_name = PREFERRED_NAMES.get(
             canonical_key, min(observed_names, key=lambda value: (value.casefold(), value))
         )
-        aliases = sorted(
-            (
-                name
-                for name in observed_names
-                if normalize_name(name) != normalize_name(canonical_name)
-            ),
-            key=lambda value: (value.casefold(), value),
-        )
+        aliases = deduplicate_aliases(observed_names, canonical_name)
         mentions = []
         for item in entity_mentions[canonical_key]:
             mentions.append(
